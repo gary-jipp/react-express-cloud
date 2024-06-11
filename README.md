@@ -1,26 +1,33 @@
-# React-Express-Cloud
 
-React-Express Shell app ready for deployment to Render or other similar platforms.  React and Express code are separate mini-projects and build/deployment is handled by the top level package.json
+### Automated Build
+- cd server, npm install
+- cd client, npm install
+- what if there was a way to do ALL of this in a single step?
 
+### Modify `package.json`
+- create a top-level `package.json`
+- create an install for the server
+- create install for the client
+- exactly the same as we do manually
+- test, them out
+- now lets create a single `install` that does them both
+- `npm install`
 
-### Built for node 16
+### Build & Deploy the React Build
+- cd client, npm run build
+- `build:client` script
 
-Copy `env.example` to `.env` to override the default env values
+- mv client/dist ./public
+- `deploy:client` script
 
-### Starting as a Single App (for Production only)
-```
-npm install
-npm run build
-npm start
-```
+### Single `build` command
+- Single `build` script can do everything
+- npm install, npm build:client, npm deploy:client
 
-### Starting as Individual Apps (for Development)
-```
-cd server-express
-npm install
-npm run local
+### Run our App
+- cd server, npm start
+- `start` script
 
-cd client-react
-npm install
-npm start
-```
+## Final Sequence
+- `npm run build`
+- `npm start`
