@@ -30,5 +30,16 @@
 - we could have actiond to deploy to other systems also
 - we'll just copy and paste the example provided
 - Change the name, add a manual deploy:  `workflow_dispatch:`
+
+ ### Secrets
+- almost all actions have secrets.  passwords, api keys, etc
+- we need 2 for our action:  Render API key and Service ID
+- In Render Account  Settings, create an "API Key" & add Secret
+- Secrets in the Repo Settings
+- The "ServiceID" is specific to the service we deployed.
+- can get from the url:  starts with "srv-"
+- Once secrets are saved, they are never visible again.
+
+# Using the Action
 - push changes and you'll see your Action.
 - Actions are always on the "default" branch (master or main)
