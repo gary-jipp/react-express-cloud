@@ -41,6 +41,17 @@
 - can get from the url:  starts with "srv-"
 - Once secrets are saved, they are never visible again.
 
-# Using the Action
-- push changes and you'll see your Action.
+### Using the Action
+- push changes and you'll see your Action already started in GitHub
 - Actions are always on the "default" branch (master or main)
+- Render Deploy will have started
+- Now its Github thats controlling the builds. Much more common
+- We can also trigger a manual build from GutHub
+
+### Final Words
+- Automated builds & deploys are the way its done
+- There's a lot more to DevOps than just build and deplot
+- We could inject some automated tests in here prior to delpoy
+- GitHub would checout the code and run the tests before sending to render
+- DevOps is a huge growth field and in great demand. Its also fun
+- Say "DeevOps" in an interview and you have their attention!!
