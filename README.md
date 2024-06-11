@@ -31,3 +31,4 @@
 - we'll just copy and paste the example provided
 - Change the name, add a manual deploy:  `workflow_dispatch:`
 - push changes and you'll see your Action.
+- Actions are always on the "default" branch (master or main)
