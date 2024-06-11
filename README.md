@@ -29,6 +29,7 @@
 - call the workflow file `render.yaml`
 - we could have actiond to deploy to other systems also
 - we'll just copy and paste the example provided
+- note: use latest version, example is old
 - Change the name, add a manual deploy:  `workflow_dispatch:`
 
  ### Secrets
