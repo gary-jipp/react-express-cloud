@@ -1,7 +1,6 @@
 # Real World React :
 
 ##  Automated Deployments
-- [ ] The problem
 - [ ] Manual Deployment
 - [ ] What is "DevOps"
 - [ ] Demo App & React "build"
