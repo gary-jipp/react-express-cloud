@@ -7,13 +7,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// serve static files from ../build (needed for React)
-const cwd = process.cwd();
-const public = path.join(cwd, '..', 'public');
-console.log("public dir: ", public);
-app.use(express.static(public));
-// Note: Do Not make a route for "/" below or it will override our static public
-
 // So we can read JSON body requests
 app.use(express.json());
 app.use(morgan('dev'));
