@@ -3,14 +3,18 @@ name: Deploy to Render
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout code
+          uses: actions/checkout@v3
+
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
