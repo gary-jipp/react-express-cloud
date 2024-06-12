@@ -10,7 +10,8 @@
     "deploy:client": "mv -f client/dist/ ./public",
     "install": "(npm run install:server) && (npm run install:client)",
     "build": "(npm install) && (npm run build:client) && (npm run deploy:client)",
-    "start": "(cd server && npm start);"
+    "start": "(cd server && npm start);",
+    "test" : "echo We have no tests.  All Good!"
   },
   "repository": {
     "type": "git",

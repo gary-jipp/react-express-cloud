@@ -15,6 +15,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Install and build
+        run : npm install
+
+      - name: Run unit and integration tests
+        run : npm test
+
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
